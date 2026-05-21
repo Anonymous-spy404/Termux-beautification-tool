@@ -11,4 +11,7 @@ git clone https://github.com/Anonymous-spy404/Termux-beautification-tool
 cd Termux-beautification-tool
 bash set.sh
 ```
-# Paste your name where needed
+## Paste your name where needed
+
+## should look like this:
+![Alt text](Screenshot_20260522_004043_Termux.jpg)
