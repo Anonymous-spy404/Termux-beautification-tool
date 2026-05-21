@@ -1,7 +1,9 @@
 # Startup
 ## to get started copy this command and paste it in termux
 
-bash```
+
+``` bash
+
 apt update
 apt upgrade -y
 pgk install git -y
