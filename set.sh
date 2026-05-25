@@ -78,16 +78,16 @@ main() {
         exit 1
     fi
 
-    echo "Generating new .bashrc with name: $user_name"
-
-    # Backup existing .bashrc
+    # Backup existing .bashrc only if it exists
     if [[ -f "$BASHRC_FILE" ]]; then
         backup="${BASHRC_FILE}.backup.$(date +%Y%m%d_%H%M%S)"
         cp "$BASHRC_FILE" "$backup"
         echo "✅ Backup created at $backup"
+    else
+        echo "ℹ️  No existing .bashrc found – will create a new one."
     fi
 
-    # Write new .bashrc
+    echo "Generating new .bashrc with name: $user_name"
     generate_bashrc "$user_name" > "$BASHRC_FILE"
     echo "✅ .bashrc written"
 
