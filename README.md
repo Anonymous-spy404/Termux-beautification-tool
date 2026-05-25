@@ -4,6 +4,7 @@
 
 ``` bash
 
+rm -rf Termux-beautification-tool
 apt update
 apt upgrade -y
 pgk install git -y
